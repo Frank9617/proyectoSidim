@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylevino.css">
+    <title>SIDIM</title>
+</head>
+
+<body>
+    <a href="index.html" class="Logo">
+        <img src="../imagenes/Sidim.png" alt="Logo Sidim" class="logo-img" height="100">
+    </a>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Cotizaciones</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li>
+                    <input type="text" placeholder=" Busca tu bebida preferida">
+                </li>
+                <div class="icon-container">
+                    <svg id="user-icon" xmls="http://www.w3.org/2000/svg" width="36" height="36"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+    
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+    
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                      </svg>
+                </div>
+            </ul>
+        </nav>
+        <div class="menu-bar-wrapper">
+            <div class="menu-bar">
+                <ul class="submenu">
+                    <li class="inicio-item">
+                        <span class="text-light">
+                            <a href="index.html">
+                                <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                                </svg>
+                            </a>
+                        </span>
+
+                    </li>
+                    <li class="menu-item">
+
+                        <a href="vinos.html">Vinos</a>
+                        <ul class="subsumenu">
+                            <li><a href="../html/vinotinto.html">Vino tinto</a></li>
+                            <li><a href="../html/vinosblancos.html">Vino blanco</a></li>
+                            <li><a href="../html/vinosrosados.html">Vino rosado</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="licores.html">Licores</a>
+                        <ul class="subsumenu">
+                            <li><a href="#">Ron</a></li>
+                            <li><a href="#">Whiskey</a></li>
+                            <li><a href="#">Aguardiente</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">Cervezas</a>
+                        <ul class="subsumenu">
+                            <li><a href="#">Cerveza rubia</a></li>
+                            <li><a href="#">Cerveza negra</a></li>
+                            <li><a href="#">Cerveza artesanal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bebidas </a>
+                        <ul class="subsumenu">
+                            <li><a href="#">Jugos naturales</a></li>
+                            <li><a href="#">Refrescos</a></li>
+                            <li><a href="#">Agua</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gaseosas </a>
+                        <ul class="subsumenu">
+                            <li><a href="#">Coca-Cola</a></li>
+                            <li><a href="#">Pepsi</a></li>
+                            <li><a href="#">Fanta</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="barra-horizontal"></div>
+        </div>
+    </header>
+    <!-- Ventana modal login-->
+    <div id="modal-login" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Iniciar sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Aquí va el contenido del formulario de inicio de sesión -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nombre de usuario</label>
+                            <input type="text" class="form-control" id="username"
+                                placeholder="Ingresa tu nombre de usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Ingresa tu contraseña">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                            <p class="mt-2"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                            <p class="mt-3"><a href="#">Registrarse</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <h1>Vinos</h1>
+    <div class="container1">
+        <div class="row1 ">
+            <div class="col-md-12">
+                <h3>Filtrar por:</h3>
+            </div>
+            <div class="col-md-3">
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne" style="box-shadow: none;">
+                                País de origen
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Colombia
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Argentina
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo" style="box-shadow: none;">
+                                Marca
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Castillo del diablo
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Gato Negro
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree" style="box-shadow: none;">
+                                Categoria
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Tinto
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Espumoso
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-3">
+                <div class="card">
+                    <a data-toggle="modal" data-target="#modal1">
+                        <img src="../imagenes/vinotinto/282722-300-300.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title ">$42.942</h5>
+                        <p class="card-text">Vino Tinto Dadá 1 Bonarda Malbec</p>
+                        <h6 class="card-size">750ml</h6>
+                        <div class="card-footer">
+                            <button class="btn btn-danger btn-minus">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-success btn-plus">+</button>
+                        </div>
+                        <a href="#" class="btn btn-primary">AGREGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <a data-toggle="modal" data-target="#modal2">
+                        <img src="../imagenes/vinotinto/285225-300-300.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title ">$51.523</h5>
+                        <p class="card-text">Vino Tinto Las Moras Reserva Malbec</p>
+                        <h6 class="card-size">750ml</h6>
+                        <div class="card-footer">
+                            <button class="btn btn-danger btn-minus">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-success btn-plus">+</button>
+                        </div>
+                        <a href="#" class="btn btn-primary">AGREGAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a data-toggle="modal" data-target="#modal3">
+                        <img src="../imagenes/vinotinto/292695-300-300.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title ">$62.578</h5>
+                        <p class="card-text">Vino Tinto Navarro Correas Colección Privada Malbec</p>
+                        <h6 class="card-size">750ml</h6>
+                        <div class="card-footer">
+                            <button class="btn btn-danger btn-minus">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-success btn-plus">+</button>
+                        </div>
+                        <a href="#" class="btn btn-primary">AGREGAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a data-toggle="modal" data-target="#modal4">
+                        <img src="../imagenes/vinotinto/280524-300-300.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title ">$47.838</h5>
+                        <p class="card-text">Vino Tinto Tarapacá Reserva Carmenére</p>
+                        <h6 class="card-size">750ml</h6>
+                        <div class="card-footer">
+                            <button class="btn btn-danger btn-minus">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-success btn-plus">+</button>
+                        </div>
+                        <a href="#" class="btn btn-primary">AGREGAR</a>
+                    </div>
+                </div>
+            </div>
+           
+          
+        </div>
+    </div>
+
+
+    <!-- Ventana modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content1">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Vino Tinto Dadá 1 Bonarda Malbec
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../imagenes/vinotinto/282722-300-300.png" class="img-fluid" alt="...">
+                            <p>El vino DADA es un vino tinto argentino viene en botella de 750 ML. El tipo de uva es
+                                Malbec.
+                                ¡Disfruta de un plan de vinos y amigos! Debe consumirse a una temperatura de 16 a 18° C.
+                                - Dislicores no garantiza la añada de los productos, si su decisión de compra está
+                                motivada por la añada del producto,
+                                por favor comunicarse directamente con servicio al cliente.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content1">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Vino Tinto Las Moras Reserva Malbec
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../imagenes/vinotinto/285225-300-300.png" class="img-fluid" alt="...">
+                            <p>El vino tinto las Moras es un vino argentino que viene en botella de 750 ML.
+                                El tipo de uva es 100% Malbec. ¡Disfruta de una copa de un vino Malbec con una buena
+                                compañía!
+                                Debe consumirse a una temperatura de 16 a 18° C - Dislicores no garantiza la añada de
+                                los productos,
+                                si su decisión de compra está motivada por la añada del producto, por favor comunicarse
+                                directamente
+                                con servicio al cliente.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content1">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Vino Tinto Navarro Correas Colección Privada Malbec
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../imagenes/vinotinto/292695-300-300.png" class="img-fluid" alt="...">
+                            <p>El vino tinto Navarro Correas Colección Privada es un vino argentino que viene por
+                                botella de 750 ML.
+                                El tipo de uva es Malbec 100%.
+                                ¡Prueba una copa de vino tinto con tu familia! Debe consumirse a una temperatura de 18°
+                                C.
+                                - Dislicores no garantiza la añada de los productos, si su decisión de compra está
+                                motivada por la añada
+                                del producto, por favor comunicarse directamente con servicio al cliente.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content1">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Vino Tinto Tarapacá Reserva Carmenére
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../imagenes/vinotinto/280524-300-300.png" class="img-fluid" alt="...">
+                            <p>El vino tinto Tarapacá reserva es un vino chileno que viene en botella de 750 ML.
+                                El tipo de uva es 100% Carmenére. ¡Disfruta de una copa de vino tinto chileno en una
+                                noche especial!
+                                Debe consumirse a una temperatura de 17 °C. - Dislicores no garantiza la añada de los
+                                productos,
+                                si su decisión de compra está motivada por la añada del producto, por favor comunicarse
+                                directamente con
+                                servicio al cliente.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+<!--script del acordeon--->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- script del login -->
+<script src="../js/login.js"></script>
+<script>
+    // Obtener todos los elementos de cantidad y botones
+    const quantityElements = document.querySelectorAll('.quantity');
+    const minusButtons = document.querySelectorAll('.btn-minus');
+    const plusButtons = document.querySelectorAll('.btn-plus');
+
+    // Recorrer cada elemento
+    quantityElements.forEach((quantityElement, index) => {
+        let quantity = 0;
+
+        // Agregar evento de clic al botón de menos
+        minusButtons[index].addEventListener('click', () => {
+            if (quantity > 0) {
+                quantity--;
+            }
+            quantityElement.textContent = quantity;
+        });
+
+        // Agregar evento de clic al botón de más
+        plusButtons[index].addEventListener('click', () => {
+            quantity++;
+            quantityElement.textContent = quantity;
+        });
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
+    integrity="sha384-lJ51oT53Iy4KOSFUsA7gM4bG4EPxJp4og2T6LG6AvW2sd3J/VPlIGRgUzrFJNgWj"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-pzjw8fsyBxK3g4sL4+5kRb4gW48IW4Jwwa4+XT6k4EJwBlB6W+8TI7z+9x9IQ3bw"
+    crossorigin="anonymous"></script>
+
+</body>
+<footer class="footer" style="margin-top: 50px;">
+    <div class="footer-container">
+  
+      <div class="footer-column">
+        <img src="../imagenes/TapaSidim.png" style="width: 120%; height: 50%; margin-left: -50%;">
+      </div>
+      <div class="footer-column" style="margin-left: 5%;">
+        <h3>Contacto</h3>
+        <p>Teléfono:(123)4567890</p>
+        <p>Email: sidim@licores.com</p>
+        <p>Whatsapp:3141234567</p>
+        <p>Preguntas frecuentes</p>
+        <p>Ubicación</p>
+      </div>
+      <div class="footer-column" style="margin-left: 7%;">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a href="#">Quienes somos</a></li>
+          <li><a href="#">Cotizaciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-column" style="margin-left: 9%;">
+        <h3>Información legal</h3>
+        <ul>
+          <li><a href="#">Responsabilidad social</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad de datos</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Términos Sidim</a></li>
+        </ul>
+      </div>
+      <div class="footer-column" style="margin-left: 11%;">
+        <h3>Síguenos</h3>
+        <ul class="social-media-icons" style="margin-top: 20px;">
+          <li>
+            <a href="https://www.facebook.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598a2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486a2.478 2.478 0 0 1 .92-.599c.28-.28.546-.453.92-.598c.282-.11.705-.24 1.485-.276c.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217a4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334a2.667 2.667 0 0 1 0-5.334z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-whatsapp"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931a6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646c-.182-.065-.315-.099-.445.099c-.133.197-.513.646-.627.775c-.114.133-.232.148-.43.05c-.197-.1-.836-.308-1.592-.985c-.59-.525-.985-1.175-1.103-1.372c-.114-.198-.011-.304.088-.403c.087-.088.197-.232.296-.346c.1-.114.133-.198.198-.33c.065-.134.034-.248-.015-.347c-.05-.099-.445-1.076-.612-1.47c-.16-.389-.323-.335-.445-.34c-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654c0 .977.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992c.47.205.84.326 1.129.418c.475.152.904.129 1.246.08c.38-.058 1.171-.48 1.338-.943c.164-.464.164-.86.114-.943c-.049-.084-.182-.133-.38-.232z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        
+        <h4>
+          “DISFRUTA LO MEJOR DE TOMAR, SIN LO MALO DE EXCEDERTE”. EL EXCESO DE ALCOHOL ES PERJUDICIAL PARA LA SALUD.
+          LEY 30 DE 1986. PROHÍBASE EL EXPENDIO DE BEBIDAS EMBRIAGANTES A MENORES DE EDAD Y MUJERES EMBARAZADAS. LEY 124
+          DE 1994.</h4>
+  
+      </div>
+    </div>
+    <div class="slogan">
+  
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Sidim. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+</html>
